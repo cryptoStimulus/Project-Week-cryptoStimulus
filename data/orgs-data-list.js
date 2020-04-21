@@ -87,7 +87,7 @@ const orgsData = [
         description: `The purpose of SnowCap was to discover the real needs in the area, communicate them, and assist residents, churches, and community leaders to meet those needs individually and cooperatively. The organization adopted a philosophy that "SnowCap will cross lines of race, religion, national origin, and economic status, hoping to coordinate and act as a barometer, correcting conditions which call for improvement."`,
         descriptionShort: `Addresses the real needs in the area, communicates them, and assists residents, churches, and community leaders to meet those needs individually and cooperatively.`,
         category: `food bank / shelter`,
-        donationTypes: [`monetary, food supplies`]
+        donationTypes: [`monetary`, `food supplies`]
     }, {
         id: `tips`,
         name: `Service Industry Tips`,
