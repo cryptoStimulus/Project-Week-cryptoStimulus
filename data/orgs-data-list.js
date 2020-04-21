@@ -3,7 +3,6 @@ const orgsData = [
         id: 'gimmeShelter',
         name: 'Gimme Shelter',
         image: 'Gimme-Shelter.png',
-        address: 'Gimme Shelter Portland P.O. Box 15319 Portland, OR 97293',
         phone: 'contact@gimmeshelterportland.org',
         link: 'https://www.gimmeshelterportland.org/',
         donationLink: 'n/a',
