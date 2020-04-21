@@ -13,10 +13,10 @@ const updatingLocalStorage = () => {
         // if we do have it, then parse 
         preferenceData = JSON.parse(preferenceData);
     }
-
+    //for all of the inputs that exist 
     radio.forEach((preferenceButton) => {
+        //when you press the specific preferenceButton
         preferenceButton.addEventListener('click', () => {
-
             preferenceData.push(event.target.value);  // pushing the value of oiinput radio into our empty array 
 
 

@@ -1,5 +1,5 @@
 import { makeUser } from './utils.js';
-
+// what elements am I using to create change or what elements am I changing? 
 const form = document.querySelector('form');
 
 const loginButton = document.getElementById('login-button');
@@ -14,15 +14,10 @@ loginButton.addEventListener('click', (event) => {
     else {
         const formData = new FormData(form);
         const madeUser = makeUser(formData);
+        const stringed = JSON.stringify(madeUser);
+        localStorage.setItem('userData', stringed);
 
-        JSON.stringify(localStorage.setItem('username', madeUser.userName));
-        JSON.stringify(localStorage.setItem('email', madeUser.email));
         window.location.replace ('./preferences/index.html');
     }    
 });
 
-
-
-// if email = null 
-// if username = null
-// else returns = to loginPage/ null
