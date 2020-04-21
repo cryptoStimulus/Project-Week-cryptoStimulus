@@ -17,7 +17,7 @@ loginButton.addEventListener('click', (event) => {
 
         JSON.stringify(localStorage.setItem('username', madeUser.userName));
         JSON.stringify(localStorage.setItem('email', madeUser.email));
-        window.location = './preference/preference.html';
+        window.location.replace ('./preferences/index.html');
     }    
 });
 
