@@ -2,3 +2,15 @@
 
 /* to hide our checkboxes */
 /*  */
+
+input { 
+    display: none;
+}
+
+input[type='checkbox']:checked + img {
+    box-shadow: -1px 0px 13px 4px rgba(0,0,0,0.5);
+}
+
+img {
+    border-radius: 50px;
+}
