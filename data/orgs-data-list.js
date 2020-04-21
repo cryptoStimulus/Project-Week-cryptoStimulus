@@ -6,7 +6,7 @@ const orgsData = [
         address: 'Gimme Shelter Portland P.O. Box 15319 Portland, OR 97293',
         phone: 'contact@gimmeshelterportland.org',
         link: 'https://www.gimmeshelterportland.org/',
-        donationLink: '',
+        donationLink: 'n/a',
         description: 'Our serious activism in shelter animal welfare issues began after we sold our small business in Portland and suddenly had the time to follow the fates of the hundreds of thousands of animals who end up at Multnomah County Animal Services every year.',
         descriptionShort: 'Animal shelter',
         category: 'animal rights',
@@ -26,6 +26,8 @@ const orgsData = [
         id: 'navajoHopiRelief',
         name: 'Navajo Hopi Families Covid Relief',
         image: 'Navajo-Hopi-Families-CovidRelief.jpg',
+        phone: 'n/a',
+        Link: 'https://www.gofundme.com/f/NHFC19Relief',
         donationLink: 'https://www.gofundme.com/f/NHFC19Relief',
         description: `Navajo and Hopi Families Covid 10 Relief fund`,
         descriptionShort:`Navajo and Hopi Families Covid 10 Relief fund`,
@@ -35,7 +37,6 @@ const orgsData = [
         id: 'passYourCheck',
         name: 'Pass Your Check', 
         image: 'pass-your-check.png',
-        image2: 'pass-your-check-2.png',
         phone: `(503) 231-3969`,
         link: `https://www.passyourcheckpdx.org/`,
         donationLink: `https://www.passyourcheckpdx.org/pyc`,
@@ -47,6 +48,7 @@ const orgsData = [
         id: 'pdxMutalAid',
         name: 'PDX Mutal Aid',
         image: 'PDX-Mutal-Aid.png',
+        phone: 'n/a',
         link: `https://www.instagram.com/pdxcovid19mutualaid/`,
         donationLink: `https://www.gofundme.com/f/pdx-covid19-mutual-aid-network-fundraiser`,
         description: `Portland based - Coordinating mutual aid responses for those impacted by COVID-19.`,
@@ -70,7 +72,7 @@ const orgsData = [
         image: `rosewood-initiative.jpg`,
         phone: `(503) 208-2562`,
         link: `https://www.rosewoodinitiative.org/`,
-        donationLink: `charity.gofundme.com/o/en/campaign/guerreras-latinas-covid-19-relief-fund1?fbclid=IwAR0pWAMmROjIifzaPWGKiwXp1N2oPGVWEe4DwD5jACu131KOBLK0qtEbG98`,
+        donationLink: `https://charity.gofundme.com/o/en/campaign/guerreras-latinas-covid-19-relief-fund1?fbclid=IwAR0pWAMmROjIifzaPWGKiwXp1N2oPGVWEe4DwD5jACu131KOBLK0qtEbG98`,
         description: `A Latina support and empowerment group that helps participants become more self-reliant and confident in their daily lives, develop leadership skills, and form connections to better their lives.Those supported will not be receiving a stimulus check, and this group provides basic needs and care to those affected in the Rosewood Neighborhood.`,
         descriptionShort: `A Latina support group working to provide basic necessities to those affected within the Rosewood neighborhood that are ineligible for the stimulus check.`,
         category: `social advocacy`,
@@ -90,6 +92,7 @@ const orgsData = [
         id: `tips`,
         name: `Service Industry Tips`,
         image: `tips.jpeg`,
+        phone: 'n/a',
         link: `https://serviceindustry.tips/en/pre-login/?next=https://app.serviceindustry.tips/en/signup/`,
         donationLink: `https://serviceindustry.tips/en/pre-login/?next=https://app.serviceindustry.tips/en/signup/`,
         description: `If you work in Portland in the food & beverage industry, or if your income is largely tip based, you are eligible to register with ServiceIndustry.tips. Complete this form and you may receive random tips from random members of the public who would otherwise be patronizing your services.`,
@@ -99,6 +102,8 @@ const orgsData = [
     }, {
         id: `pdxArtistRelief`,
         name: `Portland Area Artist Emergency Relief Fund`,
+        phone: 'n/a',
+        image: 'place-holder.png',
         link: `https://www.pdxartistrelief.com/`,
         donationLink: `https://www.pdxartistrelief.com/about`,
         category: `service/ artist funds`,
@@ -136,6 +141,17 @@ const orgsData = [
         descriptionShort: `A no-kill shelter in pursuit of rehoming and saving animals across the Portland Metro area.`,
         category: `animal rights`,
         donationTypes: [`monetary`, `volunteer`]
+    }, {
+        id: 'oregonPubHouse',
+        name: 'Oregon Public House',
+        image: 'oph.png',
+        phone: '(503)828-0884',
+        link: 'https://www.oregonpublichouse.com/',
+        donationLink: 'https://www.gofundme.com/f/help-oph-get-through-covid19-closure?utm_medium=copy_link&utm_source=customer&utm_campaign=p_lico+share-sheet',
+        description: `When customers purchase their food and/or beverage they have a chance to vote for how our donation should be given from a list of local charities. We've simply positioned ourselves to be the "fundraising department" for these charitable organizations, by providing the community with great food and great beer in a warm, inviting environment.`,
+        descriptionShort: `A bar that donates proceeds to local non-profits.`,
+        cateogry: 'service/ artist funds',
+        donationTypes: ['monetary']
     }
 ];
 
