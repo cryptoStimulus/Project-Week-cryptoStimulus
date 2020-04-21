@@ -6,11 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <!-- working title to the window tab -->
+    <title>Stimulus Relocation</title> 
 </head>
 
 <body>
+    Login Page
+    
+    <main>
+        <form id='login-form'>
+            <label>
+                <!-- name or username? -->
+                <span>NAME/USERNAME</span> 
+                <input type='text' id='username' name='username' value='' required>
+            </label>
 
+            <label>
+                <span>EMAIL</span> 
+                <input type='email' id='email' name='email' value='' required>
+            </label>
+
+            <button type='button' id='login-button'>Submit</button>
+        </form>
+    </main>
     <script type="module" src="app.js"></script>
 </body>
 
