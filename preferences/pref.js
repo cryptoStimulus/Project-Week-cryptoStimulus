@@ -17,18 +17,33 @@ const updatingLocalStorage = () => {
     radio.forEach((preferenceButton) => {
         //when you press the specific preferenceButton
         preferenceButton.addEventListener('click', () => {
-            preferenceData.push(event.target.value);  // pushing the value of oiinput radio into our empty array 
+            // will want to wrap lines 20-26 in an if block 
 
+            if (!preferenceData.includes(event.target.value)) {
+                preferenceData.push(event.target.value);
+                const stringifiedPreferenceData = JSON.stringify(preferenceData); //stringifying our updated array
+                localStorage.setItem('preferences', stringifiedPreferenceData); //updating local storage
 
-            const stringifiedPreferenceData = JSON.stringify(preferenceData); //stringifying our updated array
-
-            localStorage.setItem('preferences', stringifiedPreferenceData); //updating local storage
+            } else {
+                alert('did nothing!');
+            }
         });
     });
 
 };
 
 updatingLocalStorage();
+
+// submit button listener 
+
+const submitButton = document.getElementById('submit-button');
+
+submitButton.addEventListener('click', () => {
+    // upon click, we want us to reroute the user to a different page 
+    window.location.replace('../options/index.html');
+
+
+});
 
 
 
