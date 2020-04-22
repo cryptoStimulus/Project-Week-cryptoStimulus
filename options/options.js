@@ -67,6 +67,7 @@ export function renderCompanyBlock() {
         saveDiv.class = 'fav-button';
         const favButton = document.createElement('button');
         favButton.textContent = 'Favorite'; 
+        favButton.id = company.id;
         //append
         saveDiv.appendChild(favButton);
         companyBlock.appendChild(saveDiv);
@@ -80,30 +81,25 @@ export function renderCompanyBlock() {
 
 renderCompanyBlock();
 
+//WHAT TO DO NEXT: we will need to create a function /////////
 
-//pull down localStorage named 'options' to get acess to 'optionsArray'
-    //go through 'optionsArray'(a for loop or a forEach)
-    // create blocks for each company of code to be childAppended to a parent node called the "company section". 
+//Event listeners for favorite buttons 
+
+const favButtonArray = document.querySelectorAll('button');
+const favoritesArray = [];
+
+const stringyFavoritesArray = JSON.stringify(favoritesArray);
+localStorage.setItem('favorites', stringyFavoritesArray); //setting local storage to favorites 
 
 
-/*
-<section class='company'>
-            <div id=logo>
-                <image>
-            </div>
-            <div id=text>
-                <p>name<p/>
-                <p>description</p>
-            </div>
-            <div id='cat'>
-                <p>category(s)</p>
-             </div>
-            <div id='save'>
-                <button>Favorite</button>
-            </div>
-        </section>
-*/
 
-//Event listeners for save buttons 
+favButtonArray.forEach((favoriteButton) => { // foreach favorite button
+    favoriteButton.addEventListener('click', () => {
+
+    //we want the selected favorite to push 'some property' of that option into an array 
+
+        
+    });
+});
     // upon clicking take in info about user's choice
     // pushed into a new array that will become it's own local storage named "favorites"
