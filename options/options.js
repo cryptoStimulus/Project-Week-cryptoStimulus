@@ -98,6 +98,7 @@ localStorage.setItem('favorites', stringyFavoritesArray); //setting local storag
 favButtonArray.forEach((favoriteButton) => { // foreach favorite button
     favoriteButton.addEventListener('click', (event) => {
         const favStorage = localStorage.getItem('favorites');
+        
         const buttonName = event.target.value;
         const company = findById(parsedOptions, buttonName);
 
