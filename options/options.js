@@ -79,6 +79,7 @@ export function renderCompanyBlock() {
 
 }
 
+// a change
 renderCompanyBlock();
 
 //WHAT TO DO NEXT: we will need to create a function /////////
