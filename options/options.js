@@ -7,7 +7,7 @@
 
 
 // import other files 
-
+import { findById } from '../utils.js';
 import orgsData from '../data/orgs-data-list.js';
 import findByCategory from './find-by-category.js';
 
@@ -84,6 +84,9 @@ renderCompanyBlock();
 
 //WHAT TO DO NEXT: we will need to create a function /////////
 
+//We want this function to contain an object
+
+
 //Event listeners for favorite buttons 
 
 const favButtonArray = document.querySelectorAll('button');
@@ -92,11 +95,17 @@ const favoritesArray = [];
 const stringyFavoritesArray = JSON.stringify(favoritesArray);
 localStorage.setItem('favorites', stringyFavoritesArray); //setting local storage to favorites 
 
-
-
 favButtonArray.forEach((favoriteButton) => { // foreach favorite button
-    favoriteButton.addEventListener('click', () => {
+    favoriteButton.addEventListener('click', (event) => {
+        const favStorage = localStorage.getItem('favorites');
+        const buttonName = event.target.value;
+        const company = findById(parsedOptions, buttonName);
 
+        if (company.id === buttonName) {
+            favoritesArray.push(company);
+        }
+        localStorage.setItem('favorites', favoritesArray);
+        
     //we want the selected favorite to push 'some property' of that option into an array 
 
         
