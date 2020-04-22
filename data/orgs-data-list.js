@@ -44,9 +44,9 @@ const orgsData = [
         category: `social advocacy`,
         donationTypes: [`monetary`, `backpacks`, `basic needs supplies`, `volunteer`, `monthly gift and purchases`],
     }, {
-        id: 'pdxMutalAid',
-        name: 'PDX Mutal Aid',
-        image: 'PDX-Mutal-Aid.png',
+        id: 'pdxMutualAid',
+        name: 'PDX Mutual Aid',
+        image: 'PDX-Mutual-Aid.jpg',
         phone: 'n/a',
         link: `https://www.instagram.com/pdxcovid19mutualaid/`,
         donationLink: `https://www.gofundme.com/f/pdx-covid19-mutual-aid-network-fundraiser`,

@@ -7,9 +7,9 @@
 
 
 // import other files 
-
+import { findById } from '../utils.js';
 import orgsData from '../data/orgs-data-list.js';
-import findByCategory from 'find-by-category.js';
+import findByCategory from './find-by-category.js';
 
 const parsedPreferences = JSON.parse(localStorage.getItem('preferences')); 
 
@@ -32,7 +32,7 @@ export function renderCompanyBlock() {
     
         // logo div 
         const logoDiv = document.createElement('div'); 
-        logoDiv.id = 'logo';
+        logoDiv.class = 'logo';
         const companyImage = document.createElement('img');
         companyImage.src = `../assets/companies/${company.image}`;
         //append to the logo div
@@ -42,56 +42,92 @@ export function renderCompanyBlock() {
 
         // text div 
         const textDiv = document.createElement('div'); 
-        textDiv.id = 'company-id';
+        textDiv.class = 'company-id';
         const pName = document.createElement('p'); 
         pName.textContent = company.name;
         const pDescription = document.createElement('p');
         pDescription.textContent = company.description; 
         //append to the text div 
         textDiv.appendChild(pName);
-    
-    
+        textDiv.appendChild(pDescription);
+        companyBlock.appendChild(textDiv);
+
         // category div
         const categoryDiv = document.createElement('div'); 
-        categoryDiv.id = 'category';
+        categoryDiv.class = 'category';
         const pCategory = document.createElement('p');
-        pCategory.textContent = company.category; 
+        pCategory.textContent = `Category: ${company.category}`; 
+        //append
+        categoryDiv.appendChild(pCategory); 
+        companyBlock.appendChild(categoryDiv); 
+
     
         // save div
         const saveDiv = document.createElement('div'); 
-        saveDiv.id = 'fav-button';
+        saveDiv.class = 'fav-button';
         const favButton = document.createElement('button');
         favButton.textContent = 'Favorite'; 
+        favButton.id = company.id;
+        //append
+        saveDiv.appendChild(favButton);
+        companyBlock.appendChild(saveDiv);
+
+        const optionsList = document.getElementById('options-list');
         
-
+        optionsList.appendChild(companyBlock);
     }
-
-
-
-//pull down localStorage named 'options' to get acess to 'optionsArray'
-    //go through 'optionsArray'(a for loop or a forEach)
-    // create blocks for each company of code to be childAppended to a parent node called the "company section". 
 
 }
 
-/*
-<section class='company'>
-            <div id=logo>
-                <image>
-            </div>
-            <div id=text>
-                <p>name<p/>
-                <p>description</p>
-            </div>
-            <div id='cat'>
-                <p>category(s)</p>
-             </div>
-            <div id='save'>
-                <button>Favorite</button>
-            </div>
-        </section>
-*/
+// execute the function
+renderCompanyBlock(); 
 
-//Event listeners for save buttons 
-    // upon clicking take in info about user's choice
-    // pushed into a new array that will become it's own local storage named "favorites"
+//We want this function to contain an object
+
+
+//Event listeners for favorite buttons 
+//gather all of the favoritesButtons and store them into an Array
+const favButtonArray = document.querySelectorAll('button');
+
+//gotten the local storage 'favorites'
+let favoritesArray = localStorage.getItem('favorites');
+
+//check to see if it exists/does exist 
+if (!favoritesArray) {
+    //if it does not exist, we make it equal an empty array
+    favoritesArray = [];
+
+} else {
+    //if it does exist, we parse it down so we can access it and make changes 
+    favoritesArray = JSON.parse(favoritesArray);
+}
+
+//we're going through all of the favorite buttons 
+favButtonArray.forEach((favoriteButton) => { 
+    // foreach individual button favorite button, we're adding an event listener 
+    favoriteButton.addEventListener('click', (event) => {
+        //we've defined the value (which is a string) to a variable so we can use it. 
+        const buttonId = event.target.id;
+
+        //we have found a specific company that as a unique id name which matches the id of the button. 
+        const company = findById(parsedOptions, buttonId);
+
+        //if the favorites array does not have that company already in it
+        if (!favoritesArray.includes(company)) {
+            //add that company object into the array 
+            favoritesArray.push(company);
+
+            //stringify the favoritesArray
+            const stringyFavoritesArray = JSON.stringify(favoritesArray);
+            //put the favorites array back into local storage with the same key name --> 'favorites'
+            localStorage.setItem('favorites', stringyFavoritesArray);
+        }  
+    });
+});
+
+//creating an event listner for the favorites PAGE button
+const nextButton = document.getElementById('favePageButton');
+
+nextButton.addEventListener('click', () => {
+    window.location.replace('../favorites/index.html');
+});
