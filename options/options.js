@@ -56,7 +56,7 @@ export function renderCompanyBlock() {
         const categoryDiv = document.createElement('div'); 
         categoryDiv.class = 'category';
         const pCategory = document.createElement('p');
-        pCategory.textContent = company.category; 
+        pCategory.textContent = `Category: ${company.category}`; 
         //append
         categoryDiv.appendChild(pCategory); 
         companyBlock.appendChild(categoryDiv); 
@@ -80,15 +80,12 @@ export function renderCompanyBlock() {
 }
 
 // execute the function
-renderCompanyBlock();
-
-//WHAT TO DO NEXT: we will need to create a function 
+renderCompanyBlock(); 
 
 //We want this function to contain an object
 
 
 //Event listeners for favorite buttons 
-
 //gather all of the favoritesButtons and store them into an Array
 const favButtonArray = document.querySelectorAll('button');
 
@@ -126,4 +123,11 @@ favButtonArray.forEach((favoriteButton) => {
             localStorage.setItem('favorites', stringyFavoritesArray);
         }  
     });
+});
+
+//creating an event listner for the favorites PAGE button
+const nextButton = document.getElementById('favePageButton');
+
+nextButton.addEventListener('click', () => {
+    window.location.replace('../favorites/index.html');
 });
