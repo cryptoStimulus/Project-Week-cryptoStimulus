@@ -44,9 +44,9 @@ const orgsData = [
         category: `social advocacy`,
         donationTypes: [`monetary`, `backpacks`, `basic needs supplies`, `volunteer`, `monthly gift and purchases`],
     }, {
-        id: 'pdxMutalAid',
-        name: 'PDX Mutal Aid',
-        image: 'PDX-Mutal-Aid.png',
+        id: 'pdxMutualAid',
+        name: 'PDX Mutual Aid',
+        image: 'PDX-Mutual-Aid.jpg',
         phone: 'n/a',
         link: `https://www.instagram.com/pdxcovid19mutualaid/`,
         donationLink: `https://www.gofundme.com/f/pdx-covid19-mutual-aid-network-fundraiser`,
@@ -149,7 +149,7 @@ const orgsData = [
         donationLink: 'https://www.gofundme.com/f/help-oph-get-through-covid19-closure?utm_medium=copy_link&utm_source=customer&utm_campaign=p_lico+share-sheet',
         description: `When customers purchase their food and/or beverage they have a chance to vote for how our donation should be given from a list of local charities. We've simply positioned ourselves to be the "fundraising department" for these charitable organizations, by providing the community with great food and great beer in a warm, inviting environment.`,
         descriptionShort: `A bar that donates proceeds to local non-profits.`,
-        cateogry: 'service/ artist funds',
+        category: 'service/ artist funds',
         donationTypes: ['monetary']
     }
 ];
