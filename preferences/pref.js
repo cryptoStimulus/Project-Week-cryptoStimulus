@@ -30,6 +30,17 @@ const updatingLocalStorage = () => {
 
 updatingLocalStorage();
 
+// submit button listener 
+
+const submitButton = document.getElementById('submit-button');
+
+submitButton.addEventListener('click', () => {
+    // upon click, we want us to reroute the user to a different page 
+    window.location.replace('../options/index.html');
+
+
+});
+
 
 
 
