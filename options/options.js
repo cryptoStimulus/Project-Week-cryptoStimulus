@@ -79,38 +79,51 @@ export function renderCompanyBlock() {
 
 }
 
-// a change
+// execute the function
 renderCompanyBlock();
 
-//WHAT TO DO NEXT: we will need to create a function /////////
+//WHAT TO DO NEXT: we will need to create a function 
 
 //We want this function to contain an object
 
 
 //Event listeners for favorite buttons 
 
+//gather all of the favoritesButtons and store them into an Array
 const favButtonArray = document.querySelectorAll('button');
-const favoritesArray = [];
 
-const stringyFavoritesArray = JSON.stringify(favoritesArray);
-localStorage.setItem('favorites', stringyFavoritesArray); //setting local storage to favorites 
+//gotten the local storage 'favorites'
+let favoritesArray = localStorage.getItem('favorites');
 
-favButtonArray.forEach((favoriteButton) => { // foreach favorite button
+//check to see if it exists/does exist 
+if (!favoritesArray) {
+    //if it does not exist, we make it equal an empty array
+    favoritesArray = [];
+
+} else {
+    //if it does exist, we parse it down so we can access it and make changes 
+    favoritesArray = JSON.parse(favoritesArray);
+}
+
+//we're going through all of the favorite buttons 
+favButtonArray.forEach((favoriteButton) => { 
+    // foreach individual button favorite button, we're adding an event listener 
     favoriteButton.addEventListener('click', (event) => {
-        const favStorage = localStorage.getItem('favorites');
-        
-        const buttonName = event.target.value;
-        const company = findById(parsedOptions, buttonName);
+        //we've defined the value (which is a string) to a variable so we can use it. 
+        const buttonId = event.target.id;
 
-        if (company.id === buttonName) {
+        //we have found a specific company that as a unique id name which matches the id of the button. 
+        const company = findById(parsedOptions, buttonId);
+
+        //if the favorites array does not have that company already in it
+        if (!favoritesArray.includes(company)) {
+            //add that company object into the array 
             favoritesArray.push(company);
-        }
-        localStorage.setItem('favorites', favoritesArray);
-        
-    //we want the selected favorite to push 'some property' of that option into an array 
 
-        
+            //stringify the favoritesArray
+            const stringyFavoritesArray = JSON.stringify(favoritesArray);
+            //put the favorites array back into local storage with the same key name --> 'favorites'
+            localStorage.setItem('favorites', stringyFavoritesArray);
+        }  
     });
 });
-    // upon clicking take in info about user's choice
-    // pushed into a new array that will become it's own local storage named "favorites"
