@@ -1,0 +1,61 @@
+/* Setting up some basic styles */
+
+html {
+    height: 100%;
+    max-height: 100%;
+    font-family: sans-serif;
+    font-size: 60%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: #D6EDFF;
+}
+
+header {
+    background-color: rgb(113, 145, 238);
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    height: 100%;
+    max-height: 100%;
+    font-family: "Merriweather", serif;
+    font-size: 1.8rem;
+    line-height: 1.75em;
+    color: #3a4145;
+    text-rendering: geometricPrecision;
+    -moz-text-align-last: auto;
+    
+}
+
+.nav img {
+     max-width:100%;
+     height:auto;
+}
+
+.page-title {
+    position: -webkit-sticky;
+    margin: 10px 0 10px 0;
+    font-size: 5rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+
+fieldset {
+    width: 350px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+legend {
+    background-color: #efefef;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: left;
+    text-transform: uppercase;
+}

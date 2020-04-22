@@ -11,23 +11,27 @@
 </head>
 
 <body>
-    Login Page
     
+    <header>Login Page</header>
     <main>
-        <form id='login-form'>
-            <label>
-                <!-- name or username? -->
-                <span>NAME/USERNAME</span> 
-                <input type='text' id='username' name='username' value='' required>
-            </label>
-
-            <label>
-                <span>EMAIL</span> 
-                <input type='email' id='email' name='email' value='' required>
-            </label>
-
-            <button type='button' id='login-button'>Submit</button>
-        </form>
+        <!--adding fieldset & legend to help contain and group the Form Elements -->
+        <fieldset>
+            <legend>User Setup</legend>    
+                <form id='login-form'>
+                    <label>
+                        <!-- name or username? -->
+                        <span>Username:</span> 
+                        <input type='text' id='username' name='username' value='' required="required">
+                    <br />
+                    
+                    <label>
+                        <span>Email:</span> 
+                        <input type='email' id='email' name='email' value='' required="required">
+                    <br />
+                    
+                    <button type='button' id='login-button'>Submit</button>
+                </form>
+        </fieldset>
     </main>
     <script type="module" src="app.js"></script>
 </body>
