@@ -1,46 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap'); */
+@font-face {
+    font-family: 'Cardo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Cardo'), local('Cardo-Regular'), url(https://fonts.gstatic.com/s/cardo/v11/wlp_gwjKBV1pqhv03IE7225PUCk.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+  }
 
-@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gTD_vx3rCubqg.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
 
-html {
-    height: 100%;
-    max-height: 100%;
-    font-family: Montserrat;
-    font-size: 60%;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
+/* Header */
 header {
-    width: 900px;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 0;
+    height: auto;
+    width: auto;
 }
 
 nav { 
     width: 100%;
     background-image: url("../assets/about-us/footer-image.jpg");
+    font-family: Cardo;
 }
 
 img.logo {
-    width: 900px;
+    width: 1000px;
     margin: 0;
     background-color: white;
     padding: 0;
-    border-radius: 30%
+    border-radius: 30%;
 }
 
+
+/* Link bar font coloring */
 a {
-    text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
 }
 
+/* Color change when hovering over Links */
 a:hover { 
     color: orange;
 }
+
+/* main page content */
+main { 
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Fieldset holds the UserSetup container */
+fieldset {
+    width: 350px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 30px;
+    font-family: Montserrat;
+    text-align: center;
+}
+
+/* Legend is input boxes for the Username/email within the Fieldset */
+legend {
+    background-color: #efefef;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: Montserrat;
+    text-align: center;
+    text-transform: uppercase;
+} 
 
 ul {
     list-style-type: none;
@@ -54,112 +94,10 @@ li {
     padding: 30px;
 }
 
-/* the body */
-
-div.whoweare {
-    font-size: 100px;
-    padding: 50px;
-    font-family: Montserrat;
-    margin-top: 10px;
-    color: aquamarine;
-}
-
-main { 
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-div { 
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
-    margin: 0px;
-    padding: 0px;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-   
-}
-
-footer {
-    display: block;
-    background-image: url("../assets/about-us/footer-image.jpg");
+/* Footer content */
+#footer-image {
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
-
-h2 { 
-    color: aquamarine;
-    font-size: 40px;
-}
-
-img.profile {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2px solid rgb(11, 230, 146);
-    margin: 0;
-}
-
-fieldset {
-    width: 350px;
-    border: 1px solid #dcdcdc;
-    border-radius: 10px;
-    padding: 30px;
-    text-align: center;
-}
-
-legend {
-    background-color: #efefef;
-    border: 1px solid #dcdcdc;
-    border-radius: 10px;
-    padding: 10px 20px;
-    text-align: center;
-    text-transform: uppercase;
-} 
-
-header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-    text-align: center;
-    padding: 20px;
-}
-
-/* 
-
-
-body {
-    height: 100%;
-    max-height: 100%;
-    font-family: "Merriweather", serif;
-    font-size: 1.8rem;
-    line-height: 1.75em;
-    text-rendering: geometricPrecision;
-}
-
-.nav img {
-    max-width:100%;
-    height:auto;
-}
-
-.page-title {
-    position: -webkit-sticky;
-    margin: 10px 0 10px 0;
-    font-size: 5rem;
-    letter-spacing: -1px;
-    font-weight: 700;
-    font-family: "Open Sans", sans-serif;
-    color: #fff;
-}
-
-
-*/
