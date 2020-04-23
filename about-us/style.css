@@ -58,3 +58,7 @@ img.profile {
     border: 2px solid rgb(11, 230, 146);
     margin: 0;
 }
+
+img.profile: hover { 
+    
+}

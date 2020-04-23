@@ -55,6 +55,7 @@ export function renderCompanyBlock() {
         // category div
         const categoryDiv = document.createElement('div');
         categoryDiv.class = 'category';
+        categoryDiv.classList.add('category-text'); //edit this if it does not work
         const pCategory = document.createElement('p');
         pCategory.textContent = `Category: ${company.category}`;
         //append
@@ -69,9 +70,10 @@ export function renderCompanyBlock() {
         favButton.textContent = 'Favorite';
         favButton.id = company.id;
         favButton.type = 'checkbox';
+        favButton.classList.add('fav-button-css');
         //append
-        saveDiv.appendChild(favButton);
         companyBlock.appendChild(saveDiv);
+        saveDiv.appendChild(favButton);
 
         const optionsList = document.getElementById('options-list');
 

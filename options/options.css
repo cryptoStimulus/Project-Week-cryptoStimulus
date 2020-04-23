@@ -60,18 +60,40 @@ main {
 .company {
     border: 2px solid black;
     border-radius: 50px;
-    width: 1000px ;
+    width: 1500px ;
     padding: 50px;
     margin: 50px;
 }
 
 img {
     width: 500px;
+    float: left;
+    position: relative;
+    top: 50%;
 }
+
+p {
+    overflow: hidden;
+    padding: 25px;
+    margin: 10px;
+}
+
+.category-text {
+    text-align: right;
+}
+
+/* .fav-button-css {
+    float: right;
+}  */
+
 
 footer {
     background-image: url("../assets/about-us/footer-image.jpg");
     height: 100%;
     display: flex;
     justify-content: center;
+}
+
+button {
+    float: right;
 }

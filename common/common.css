@@ -9,6 +9,7 @@ header {
 nav { 
     width: 100%;
     background-image: url("../assets/about-us/footer-image.jpg");
+    height: 100%;
 }
 
 img.logo {
@@ -42,9 +43,11 @@ li {
 
 /* FOOTER */
 
-footer {
+#footer-image {
     background-image: url("../assets/about-us/footer-image.jpg");
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
+
