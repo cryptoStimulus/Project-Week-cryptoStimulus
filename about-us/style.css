@@ -36,11 +36,12 @@ img.logo {
 a {
     color: white;
     font-size: 30px;
+    text-decoration: none;
 }
 
-/* a:visited{ 
+a:hover{ 
     color: orange;
-} */
+}
 
 ul {
     list-style-type: none;
