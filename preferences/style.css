@@ -20,98 +20,39 @@ input {
     display: none;
 }
 
-input[type='checkbox']:checked + img {
-    box-shadow: -1px 0px 13px 4px rgba(0,0,0,0.5);
-}
-
-body {
-    background-color: white;
-}
-
-/* can make a common header if we want to for a nice navigation bar */
-
-header {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-}
-
-nav { 
-    width: 100%;
-    background-image: url("../assets/about-us/footer-image.jpg");
-    
-}
-
-img.logo {
-    width: 1000px;
-    margin: 0;
-    background-color: white;
-    padding: 0;
-    border-radius: 30px;
-}
-
-a {
-    color: white;
-    font-size: 30px;
-    font-family: 'Cardo';
-}
-
-/* a:visited{ 
-    color: orange;
-} */
-/* navigation styling */
-ul {
-    list-style-type: none;
-    display: flex; 
-    justify-content: center;
-    color: white;
-    padding: 0;
-}
-
-li {
-    padding: 30px;
-}
-
-/* footer styling*/
-footer {
-    background-image: url("../assets/about-us/footer-image.jpg");
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 /*main styling*/
 
 main {
-    font-family: 'Montserrat';
     text-align: center;
+    font-family: 'Montserrat';
     margin-bottom: 30px;
     margin-top: 30px;
-    /* background-image:url("../assets/about-us/footer-image.jpg");
-    width: 80%; */
-}
-
-#boxes {
-    width: 40%;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-label {
-    margin-bottom: 100px;
 }
 
 .button {
-    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    height: 75px;
+    margin: 0px auto;
 }
 
+#note {
+    color: lightgrey;
+}
+
+/*button styling*/
 button {
-    padding: 10px;
-    font-size: 20px;
-    margin-top: 30px;
-}
-
+    color: black;; font-size: 17px; line-height: 17px; padding: 10px; border-radius: 50px; 
+    font-family: 'Montserrat'; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-color: white;; 
+    border-color: black;
+    display: inline-block;}
+    button:hover {
+    border-color: orange; }
+    button:active {
+    border-color: orange; }

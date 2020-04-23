@@ -1,17 +1,19 @@
+import buttonOn from '../data/button-data.js';
 
-const updatingLocalStorage = () => { 
+
+const updatingLocalStorage = () => {
     const radio = document.querySelectorAll('input');
 
     // import data for local storage preferences
     let preferenceData = localStorage.getItem('preferences');
 
     // if it does not exist, we will need to create array
-    if (!preferenceData){
+    if (!preferenceData) {
         // make an empty array if we do not have preference data 
-        preferenceData = []; 
+        preferenceData = [];
     } else {
         // if we do have it, then parse 
-        preferenceData = JSON.parse(preferenceData);
+        preferenceData = [];
     }
     //for all of the inputs that exist 
     radio.forEach((preferenceButton) => {
@@ -23,9 +25,15 @@ const updatingLocalStorage = () => {
                 preferenceData.push(event.target.value);
                 const stringifiedPreferenceData = JSON.stringify(preferenceData); //stringifying our updated array
                 localStorage.setItem('preferences', stringifiedPreferenceData); //updating local storage
+                const image = document.getElementById(event.target.value)
 
+                buttonOn.forEach(imageObj => {
+                    if (imageObj.id === image.id) {
+                        image.src = imageObj.src;
+                    }
+                });
             } else {
-                alert('did nothing!');
+                alert(`You've already chosen this preference, please choose another`);
             }
         });
     });
@@ -34,8 +42,11 @@ const updatingLocalStorage = () => {
 
 updatingLocalStorage();
 
-// submit button listener 
+//changing image upon click 
 
+
+
+// submit button listener 
 const submitButton = document.getElementById('submit-button');
 
 submitButton.addEventListener('click', () => {
