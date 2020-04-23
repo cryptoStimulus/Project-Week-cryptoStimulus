@@ -25,7 +25,7 @@ const updatingLocalStorage = () => {
                 preferenceData.push(event.target.value);
                 const stringifiedPreferenceData = JSON.stringify(preferenceData); //stringifying our updated array
                 localStorage.setItem('preferences', stringifiedPreferenceData); //updating local storage
-                const image = document.getElementById(event.target.value)
+                const image = document.getElementById(event.target.value);
 
                 buttonOn.forEach(imageObj => {
                     if (imageObj.id === image.id) {
