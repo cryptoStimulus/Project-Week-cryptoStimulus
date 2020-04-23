@@ -2,7 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
 
 
-/*a change - push test*/
+
+.header-nav-link { 
+    width: 100%;
+    background-image: url("../assets/about-us/footer-image.jpg");
+    color: white;
+}
 
 header {
     display: flex;
@@ -14,7 +19,7 @@ header {
 nav { 
     width: 100%;
     background-image: url("../assets/about-us/footer-image.jpg");
-
+    height: 100%;
 }
 
 img.logo {
@@ -26,7 +31,6 @@ img.logo {
 }
 
 a {
-    color: white;
     font-size: 30px;
     font-family: Cardo;
     text-decoration: none;
@@ -49,25 +53,30 @@ li {
     padding: 30px;
 }
 
+
 /* body */
 
 main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    
 }
+
 .company {
     border: 2px solid black;
     border-radius: 50px;
     width: 1500px ;
     padding: 50px;
     margin: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
 }
 
 img {
     width: 500px;
-    float: left;
     position: relative;
     top: 50%;
 }
@@ -75,7 +84,7 @@ img {
 p {
     overflow: hidden;
     padding: 25px;
-    margin: 10px;
+    margin: 10px;  
 }
 
 .category-text {

@@ -10,6 +10,7 @@ nav {
     width: 100%;
     background-image: url("../assets/about-us/footer-image.jpg");
     height: 100%;
+    
 }
 
 img.logo {
@@ -21,13 +22,15 @@ img.logo {
 }
 
 a {
-    color: white;
     font-size: 30px;
+    font-family: Cardo;
+    text-decoration: none;
+    
 }
 
-/* a:visited{ 
+a:hover { 
     color: orange;
-} */
+}
 
 ul {
     list-style-type: none;

@@ -37,6 +37,7 @@ function companyBlock2() {
     // link div
         const linkDiv = document.createElement('div');
         linkDiv.id = 'links';
+        linkDiv.classList.add('links-css');
         const aLink = document.createElement('a');
         aLink.href = company.link;
         aLink.textContent = 'Website';
