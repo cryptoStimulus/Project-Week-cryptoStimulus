@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
+
+
+.header-nav-link { 
+    width: 100%;
+    background-image: url("../assets/about-us/footer-image.jpg");
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+nav { 
+    width: 100%;
+    background-image: url("../assets/about-us/footer-image.jpg");
+    height: 100%;
+}
+
+img.logo {
+    width: 1000px;
+    margin: 0;
+    background-color: white;
+    padding: 0;
+    border-radius: 30%
+}
+
+a {
+    font-size: 30px;
+    font-family: Cardo;
+    text-decoration: none;
+    
+}
+
+a:hover { 
+    color: orange;
+}
+
+ul {
+    list-style-type: none;
+    display: flex; 
+    justify-content: center;
+    color: white;
+    padding: 0;
+}
+
+li {
+    padding: 30px;
+}
+
+
+/* body */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    
+}
+
+.company {
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 500px ;
+    padding: 50px;
+    margin: 50px;
+    display: block;
+    justify-content: center;
+    background-color: lightskyblue;
+    font-size: 30px;
+    font-family: Cardo;
+    text-align: center;
+}
+
+.favorites-img {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.favorites-title {
+    font-family: Cardo;
+    font-size: 50px;
+    color: white;
+    text-align: center; 
+    background-color: orange;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.fav-description {
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.links-css {
+    text-transform: lowercase;
+    display: block;
+}
+.links-css:visited {
+    color: whitesmoke;
+}
+.links-css:hover {
+    text-decoration: underline;
+    color: salmon;
+}
+
+.category-text {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+footer {
+    background-image: url("../assets/about-us/footer-image.jpg");
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    float: right;
+}

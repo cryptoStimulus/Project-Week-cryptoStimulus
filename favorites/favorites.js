@@ -1,8 +1,16 @@
 //get the new favorites array 
 const faves = JSON.parse(localStorage.getItem('favorites'));
-console.log(faves);
 
-
+/*
+function createElement(parent, tag, className = '') {
+    const element = document.createElement(tag);
+    element.classList.add(className); 
+    parent.appendChild(element);
+    return element;
+}
+const companyImage = createElement(companyBlock, 'img', 'favorites-img');
+companyImage.src = '../assets/companies/' + company.image;
+*/
 
 function companyBlock2() {
     for (let i = 0; i < faves.length; i++) {
@@ -11,54 +19,39 @@ function companyBlock2() {
     // parent company block
         const companyBlock = document.createElement('section');
         companyBlock.classList.add('company');
+        const optionsList = document.getElementById('favorites-list');
+        optionsList.appendChild(companyBlock);
 
     // logo div 
-        const logoDiv = document.createElement('div'); 
-        logoDiv.class = 'logo';
         const companyImage = document.createElement('img');
         companyImage.src = '../assets/companies/' + company.image;
-    //append to the logo div
-        logoDiv.appendChild(companyImage);
-        companyBlock.appendChild(logoDiv);
+        companyImage.classList.add('favorites-img');
+        companyBlock.appendChild(companyImage);
 
-
-    // text div 
-        const textDiv = document.createElement('div'); 
-        textDiv.class = 'company-id';
-        const pName = document.createElement('p'); 
+    // company name 
+        const pName = document.createElement('p');
+        pName.classList.add('favorites-title'); 
         pName.textContent = company.name;
+        companyBlock.appendChild(pName);
+
+    // company desc
         const pDescription = document.createElement('p');
         pDescription.textContent = company.descriptionShort; 
-    //append to the text div 
-        textDiv.appendChild(pName);
-        textDiv.appendChild(pDescription);
-        companyBlock.appendChild(textDiv);
+        pDescription.classList.add('fav-description');
+        companyBlock.appendChild(pDescription);
+
+    // category div
+        const pCategory = document.createElement('p');
+        pCategory.textContent = `Category: ${company.category}`; 
+        pCategory.classList.add('category-text');
+        companyBlock.appendChild(pCategory); 
 
     // link div
-        const linkDiv = document.createElement('div');
-        linkDiv.id = 'links';
         const aLink = document.createElement('a');
         aLink.href = company.link;
         aLink.textContent = 'Website';
-        linkDiv.appendChild(aLink);
-        companyBlock.appendChild(linkDiv);
-
-
-    // category div
-        const categoryDiv = document.createElement('div'); 
-        categoryDiv.class = 'category';
-        const pCategory = document.createElement('p');
-        pCategory.textContent = `Category: ${company.category}`; 
-    //append
-        categoryDiv.appendChild(pCategory); 
-        companyBlock.appendChild(categoryDiv); 
-
-
-
-
-        const optionsList = document.getElementById('favorites-list');
-    
-        optionsList.appendChild(companyBlock);
+        aLink.classList.add('links-css');
+        companyBlock.appendChild(aLink);
     }  
 }
 //execute function

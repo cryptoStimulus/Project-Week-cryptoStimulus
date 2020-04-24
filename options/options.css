@@ -60,13 +60,53 @@ main {
 .company {
     border: 2px solid black;
     border-radius: 50px;
-    width: 1000px ;
+    width: 1500px ;
     padding: 50px;
+    margin: 50px;
+    display: flex;
+}
+
+/* this is where the images breeann is creating will be manipulated */
+.options-pg-logo {
+    width: 300px;
+}
+
+.options-title {
+    font-family: Montserrat;
+    font-size: 75px;
+}
+
+.options-description {
+    font-family: Cardo;
+    font-size: 30px;
+}
+
+p {
+    overflow: hidden;
+    padding: 25px;
+    margin: 10px;
+}
+
+.category-text {
+    text-align: right;
+    font-family: Montserrat;
+    text-transform: uppercase;
+}
+
+.final-submission-button {
     margin: 50px;
 }
 
-img {
-    width: 500px;
+.fav-button-css {
+    float: right;
+    background-color: orange;
+    color: white;
+    text-transform: uppercase;
+} 
+
+.fav-button-css:hover {
+    background-color: lightslategray;
+    border-color: black;
 }
 
 footer {
@@ -75,3 +115,20 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+button {
+    color: black;; font-size: 17px; line-height: 17px; padding: 10px; border-radius: 50px; 
+    font-family: 'Montserrat'; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-color: white;; 
+    border-color: black;
+    display: inline-block;
+    padding: 15px 25px;}
+    button:hover {
+    border-color: orange; }
+    button:active {
+    border-color: orange; }

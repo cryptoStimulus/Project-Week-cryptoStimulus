@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favorites</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Crypto Favorites</title>
+    <link rel="stylesheet" href="favorites.css">
+    <!-- <link rel="stylesheet" href="../common/common.css"> -->
 </head>
 <body>
     <header> 
-        <h1>Favorites</h1>
-        <nav>
-            <a href="../index.html">Login/Home</a>
-            <a href="../preferences/index.html">Preferences</a>
-            <a href="../options/index.html">Options</a>
-            <a href="./index.html">Favorites</a>
-            <a href="../about-us/about-us.html">About</a>
+        <div>
+            <img class="logo" src="../assets/about-us/logo.jpg">
+        </div>
+        <nav>  
+            <ul>
+                <li><a href="../index.html" class="header-nav-link">Home</a></li>
+                <li><a href="../preferences/index.html" class="header-nav-link">Preferences</a></li>
+                <li><a href="../options/index.html" class="header-nav-link">Options</a></li>
+                <li><a href="../favorites/index.html" class="header-nav-link">Favorites</a></li>
+                <li> <a href="../about-us/about-us.html" class="header-nav-link">About</a></li>
+            </ul>
         </nav>
     </header>
     <main id="favorites-list">
@@ -36,6 +41,11 @@
            
         <!-- </section> -->
     </main>
-    <script type="module" src="./favorites.js"></script>
+
+    <!-- a change -->
+    <footer>
+        <img src="../assets/about-us/footer-image.jpg" id="footer-image">
+    </footer>
+    <script type="module" src="favorites.js"></script>
 </body>
 </html>

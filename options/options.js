@@ -29,49 +29,44 @@ export function renderCompanyBlock() {
         // parent company block
         const companyBlock = document.createElement('section');
         companyBlock.classList.add('company');
-
-        // logo div 
-        const logoDiv = document.createElement('div');
-        logoDiv.class = 'logo';
+        
+        const imageDiv = document.createElement('div');
+        companyBlock.appendChild(imageDiv);
         const companyImage = document.createElement('img');
         companyImage.src = `../assets/companies/${company.image}`;
+        companyImage.classList.add('options-pg-logo');
         //append to the logo div
-        logoDiv.appendChild(companyImage);
-        companyBlock.appendChild(logoDiv);
+        imageDiv.appendChild(companyImage);
 
+        // content div
+        const contentDiv = document.createElement('div');
+        companyBlock.appendChild(contentDiv);
 
-        // text div 
-        const textDiv = document.createElement('div');
-        textDiv.class = 'company-id';
+        // company name
         const pName = document.createElement('p');
+        pName.classList.add('options-title');
         pName.textContent = company.name;
+        contentDiv.appendChild(pName);
+
+        // company description
         const pDescription = document.createElement('p');
+        pDescription.classList.add('options-description');
         pDescription.textContent = company.description;
-        //append to the text div 
-        textDiv.appendChild(pName);
-        textDiv.appendChild(pDescription);
-        companyBlock.appendChild(textDiv);
+        contentDiv.appendChild(pDescription);
 
         // category div
-        const categoryDiv = document.createElement('div');
-        categoryDiv.class = 'category';
         const pCategory = document.createElement('p');
+        pCategory.classList.add('category-text'); //edit this if it does not work
         pCategory.textContent = `Category: ${company.category}`;
-        //append
-        categoryDiv.appendChild(pCategory);
-        companyBlock.appendChild(categoryDiv);
-
+        contentDiv.appendChild(pCategory);
 
         // save div
-        const saveDiv = document.createElement('div');
-        saveDiv.class = 'fav-button';
         const favButton = document.createElement('button');
         favButton.textContent = 'Favorite';
         favButton.id = company.id;
         favButton.type = 'checkbox';
-        //append
-        saveDiv.appendChild(favButton);
-        companyBlock.appendChild(saveDiv);
+        favButton.classList.add('fav-button-css');
+        contentDiv.appendChild(favButton);
 
         const optionsList = document.getElementById('options-list');
 
