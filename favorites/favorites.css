@@ -69,38 +69,52 @@ main {
     width: 500px ;
     padding: 50px;
     margin: 50px;
-    
-    /* align-items: center; */
     display: block;
     justify-content: center;
+    background-color: lightskyblue;
+    font-size: 30px;
+    font-family: Cardo;
+    text-align: center;
 }
 
 .favorites-img {
     width: 400px;
-    position: relative;
-    top: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-p {
-    overflow: hidden;
-    padding: 25px;
-    margin: 10px; 
-    /* float: left;
-    margin-right: 10px; */
+.favorites-title {
+    font-family: Cardo;
+    font-size: 50px;
+    color: white;
+    text-align: center; 
+    background-color: orange;
+    border-radius: 50px;
+}
+
+.fav-description {
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.links-css {
+    text-transform: lowercase;
+    display: block;
+}
+.links-css:visited {
+    color: whitesmoke;
+}
+.links-css:hover {
+    text-decoration: underline;
+    color: salmon;
 }
 
 .category-text {
-    text-align: right;
+    font-size: 20px;
+    text-transform: uppercase;
 }
-
-.final-submission-button {
-    margin: 50px;
-}
-
-/* .fav-button-css {
-    float: right;
-}  */
-
 
 footer {
     background-image: url("../assets/about-us/footer-image.jpg");
