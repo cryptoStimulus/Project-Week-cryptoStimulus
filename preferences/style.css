@@ -20,8 +20,6 @@ input {
     display: none;
 }
 
-/*main styling*/
-
 main {
     text-align: center;
     font-family: 'Montserrat';
@@ -40,7 +38,6 @@ main {
     color: lightgrey;
 }
 
-/*button styling*/
 button {
     color: black;; font-size: 17px; line-height: 17px; padding: 10px; border-radius: 50px; 
     font-family: 'Montserrat'; 

@@ -53,14 +53,9 @@ li {
     padding: 30px;
 }
 
-
-/* body */
-
 main {
     display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-    
+    flex-wrap: wrap;    
 }
 
 .company {
