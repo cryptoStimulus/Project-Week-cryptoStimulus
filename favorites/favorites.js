@@ -1,5 +1,6 @@
 //get the new favorites array 
 const faves = JSON.parse(localStorage.getItem('favorites'));
+console.log(faves);
 
 
 
@@ -14,8 +15,10 @@ function companyBlock2() {
     // logo div 
         const logoDiv = document.createElement('div'); 
         logoDiv.class = 'logo';
+    
         const companyImage = document.createElement('img');
-        companyImage.src = `../assets/companies/${company.image}`;
+        companyImage.src = '../assets/companies/' + company.image;
+        companyImage.classList.add('favorites-img');
     //append to the logo div
         logoDiv.appendChild(companyImage);
         companyBlock.appendChild(logoDiv);
@@ -36,6 +39,7 @@ function companyBlock2() {
     // link div
         const linkDiv = document.createElement('div');
         linkDiv.id = 'links';
+        linkDiv.classList.add('links-css');
         const aLink = document.createElement('a');
         aLink.href = company.link;
         aLink.textContent = 'Website';
