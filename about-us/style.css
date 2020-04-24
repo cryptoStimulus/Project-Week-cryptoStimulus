@@ -38,9 +38,9 @@ li {
 div.whoweare {
     font-size: 100px;
     padding: 50px;
-    font-family: inherit;
+    font-family: Montserrat;
     margin-top: 10px;
-    color: aquamarine;
+    color: orange;
 }
 
 main { 
@@ -71,8 +71,10 @@ footer {
 }
 
 h2 { 
-    color: aquamarine;
+    color: rgb(90, 181, 220);
     font-size: 40px;
+    font-family: cardo;
+    text-transform: uppercase;
 }
 
 img.profile {
@@ -86,6 +88,11 @@ img.profile {
 
 
 .about-me-links { 
-    color: aqua;
+    color: rgb(90, 181, 220);
     font-size: 25px;
+    text-transform: lowercase;
+    background-color: rgba(255, 205, 111, 0.448); 
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
 }
