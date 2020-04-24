@@ -1,11 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
 
 
-*/
 
-/* can make a common header if we want to for a nice navigation bar */
+.header-nav-link { 
+    width: 100%;
+    background-image: url("../assets/about-us/footer-image.jpg");
+    color: white;
+}
 
 header {
     display: flex;
@@ -17,6 +19,7 @@ header {
 nav { 
     width: 100%;
     background-image: url("../assets/about-us/footer-image.jpg");
+    height: 100%;
 }
 
 img.logo {
@@ -28,12 +31,13 @@ img.logo {
 }
 
 a {
-    color: white;
     font-size: 30px;
+    font-family: Cardo;
     text-decoration: none;
+    
 }
 
-a:hover{ 
+a:hover { 
     color: orange;
 }
 
@@ -49,35 +53,54 @@ li {
     padding: 30px;
 }
 
-/* the body */
 
-div.whoweare {
-    font-size: 100px;
-    padding: 50px;
-    font-family: inherit;
-    margin-top: 10px;
-    color: aquamarine;
-}
+/* body */
 
-main { 
-    padding: 30px;
-}
-div { 
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
-    margin: 0px;
-    padding: 0px;
-}
-
-section {
+main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-   
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    
 }
+
+.company {
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 500px ;
+    padding: 50px;
+    margin: 50px;
+    
+    /* align-items: center; */
+    display: block;
+    justify-content: center;
+}
+
+.favorites-img {
+    width: 400px;
+    position: relative;
+    top: 50%;
+}
+
+p {
+    overflow: hidden;
+    padding: 25px;
+    margin: 10px; 
+    /* float: left;
+    margin-right: 10px; */
+}
+
+.category-text {
+    text-align: right;
+}
+
+.final-submission-button {
+    margin: 50px;
+}
+
+/* .fav-button-css {
+    float: right;
+}  */
+
 
 footer {
     background-image: url("../assets/about-us/footer-image.jpg");
@@ -86,19 +109,6 @@ footer {
     justify-content: center;
 }
 
-h2 { 
-    color: aquamarine;
-    font-size: 40px;
-}
-
-img.profile {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2px solid rgb(11, 230, 146);
-    margin: 0;
-}
-
-img.profile:hover { 
-    
+button {
+    float: right;
 }
