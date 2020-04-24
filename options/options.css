@@ -112,5 +112,5 @@ button {
     display: inline-block;}
     button:hover {
     border-color: orange; }
-    button:active {
+    button:checked {
     border-color: orange; }
