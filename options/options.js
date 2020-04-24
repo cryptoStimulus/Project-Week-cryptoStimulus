@@ -33,8 +33,10 @@ export function renderCompanyBlock() {
         // logo div 
         const logoDiv = document.createElement('div');
         logoDiv.class = 'logo';
+        
         const companyImage = document.createElement('img');
         companyImage.src = `../assets/companies/${company.image}`;
+        companyImage.classList.add('options-pg-logo');
         //append to the logo div
         logoDiv.appendChild(companyImage);
         companyBlock.appendChild(logoDiv);

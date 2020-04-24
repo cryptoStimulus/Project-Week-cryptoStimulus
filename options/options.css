@@ -65,11 +65,12 @@ main {
     margin: 50px;
 }
 
-img {
-    width: 500px;
+/* this is where the images breeann is creating will be manipulated */
+.options-pg-logo {
     float: left;
-    position: relative;
-    top: 50%;
+    width: 261px;
+    
+
 }
 
 p {
@@ -86,9 +87,9 @@ p {
     margin: 50px;
 }
 
-/* .fav-button-css {
+.fav-button-css {
     float: right;
-}  */
+} 
 
 
 footer {
@@ -99,5 +100,17 @@ footer {
 }
 
 button {
-    float: right;
-}
+    color: black;; font-size: 17px; line-height: 17px; padding: 10px; border-radius: 50px; 
+    font-family: 'Montserrat'; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-color: white;; 
+    border-color: black;
+    display: inline-block;}
+    button:hover {
+    border-color: orange; }
+    button:active {
+    border-color: orange; }
