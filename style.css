@@ -28,8 +28,8 @@ header {
 
 nav { 
     width: 100%;
-    background-image: url("../assets/about-us/footer-image.jpg");
-    font-family: Cardo;
+    background-image: url("./assets/about-us/footer-image.jpg");
+    font-family: 'Cardo';
 }
 
 img.logo {
@@ -64,7 +64,7 @@ fieldset {
     border: 1px solid #dcdcdc;
     border-radius: 10px;
     padding: 30px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     text-align: center;
 }
 
