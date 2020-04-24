@@ -29,12 +29,12 @@ const orgsData = [
         Link: 'https://www.gofundme.com/f/NHFC19Relief',
         donationLink: 'https://www.gofundme.com/f/NHFC19Relief',
         description: `Navajo and Hopi Families Covid 10 Relief fund`,
-        descriptionShort:`Navajo and Hopi Families Covid 10 Relief fund`,
+        descriptionShort: `Navajo and Hopi Families Covid 10 Relief fund`,
         category: `social advocacy`,
         donationTypes: [`monetary`]
     }, {
         id: 'passYourCheck',
-        name: 'Pass Your Check', 
+        name: 'Pass Your Check',
         image: 'pass-your-check.png',
         phone: `(503) 231-3969`,
         link: `https://www.passyourcheckpdx.org/`,
@@ -102,7 +102,7 @@ const orgsData = [
         id: `pdxArtistRelief`,
         name: `Portland Area Artist Emergency Relief Fund`,
         phone: 'n/a',
-        image: 'place-holder.png',
+        image: 'tips.jpeg',
         link: `https://www.pdxartistrelief.com/`,
         donationLink: `https://www.pdxartistrelief.com/about`,
         category: `service/ artist funds`,
