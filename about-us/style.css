@@ -3,22 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
 
 
-*/
-
-/* can make a common header if we want to for a nice navigation bar */
-
-header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-}
-
-nav { 
-    width: 100%;
-    background-image: url("../assets/about-us/footer-image.jpg");
-}
-
 img.logo {
     width: 1000px;
     margin: 0;
@@ -54,9 +38,9 @@ li {
 div.whoweare {
     font-size: 100px;
     padding: 50px;
-    font-family: inherit;
+    font-family: Montserrat;
     margin-top: 10px;
-    color: aquamarine;
+    color: orange;
 }
 
 main { 
@@ -87,8 +71,10 @@ footer {
 }
 
 h2 { 
-    color: aquamarine;
+    color: rgb(90, 181, 220);
     font-size: 40px;
+    font-family: cardo;
+    text-transform: uppercase;
 }
 
 img.profile {
@@ -99,6 +85,14 @@ img.profile {
     margin: 0;
 }
 
-img.profile:hover { 
-    
+
+
+.about-me-links { 
+    color: rgb(90, 181, 220);
+    font-size: 25px;
+    text-transform: lowercase;
+    background-color: rgba(255, 205, 111, 0.448); 
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
 }

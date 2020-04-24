@@ -90,7 +90,7 @@ const orgsData = [
     }, {
         id: `tips`,
         name: `Service Industry Tips`,
-        image: `tips.jpeg`,
+        image: `tips.jpg`,
         phone: 'n/a',
         link: `https://serviceindustry.tips/en/pre-login/?next=https://app.serviceindustry.tips/en/signup/`,
         donationLink: `https://serviceindustry.tips/en/pre-login/?next=https://app.serviceindustry.tips/en/signup/`,
