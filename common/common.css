@@ -1,0 +1,46 @@
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+nav { 
+    width: 100%;
+    background-image: url("../assets/about-us/footer-image.jpg");
+}
+img.logo {
+    width: 1000px;
+    margin: 0;
+    background-color: white;
+    padding: 0;
+    border-radius: 30%
+}
+a {
+    color: white;
+    font-size: 30px;
+    font-family: 'Cardo';
+    text-decoration: none;
+}
+
+a:hover{ 
+    color: orange;
+}
+ul {
+    list-style-type: none;
+    display: flex; 
+    justify-content: center;
+    color: white;
+    padding: 0;
+}
+li {
+    padding: 30px;
+}
+/* FOOTER */
+img {
+    /* background-image: url("../assets/about-us/footer-image.jpg"); */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
