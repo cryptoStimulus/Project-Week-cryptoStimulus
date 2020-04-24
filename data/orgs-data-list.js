@@ -102,9 +102,10 @@ const orgsData = [
         id: `pdxArtistRelief`,
         name: `Portland Area Artist Emergency Relief Fund`,
         phone: 'n/a',
-        image: 'place-holder.png',
+        image: 'artist-relief-fund.jpg',
         link: `https://www.pdxartistrelief.com/`,
         donationLink: `https://www.pdxartistrelief.com/about`,
+        description: `Portland's Creative Laureate, Subashini Ganesan, and Oregon's Poet Laureate, Kim Stafford, have launched this emergency relief fund to meet the growing needs for independent/freelance artists in our tri-county area, in the face of COVID-19.`,
         category: `service/ artist funds`,
         donationTypes: [`monetary`],
     }, {
