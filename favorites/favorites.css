@@ -90,6 +90,7 @@ main {
     color: white;
     text-align: center; 
     background-color: orange;
+    padding: 10px;
     border-radius: 50px;
 }
 
