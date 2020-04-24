@@ -3,22 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
 
 
-*/
-
-/* can make a common header if we want to for a nice navigation bar */
-
-header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-}
-
-nav { 
-    width: 100%;
-    background-image: url("../assets/about-us/footer-image.jpg");
-}
-
 img.logo {
     width: 1000px;
     margin: 0;
@@ -99,6 +83,9 @@ img.profile {
     margin: 0;
 }
 
-img.profile:hover { 
-    
+
+
+.about-me-links { 
+    color: aqua;
+    font-size: 25px;
 }
