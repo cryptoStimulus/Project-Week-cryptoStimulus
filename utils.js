@@ -1,16 +1,14 @@
 
 
 export function makeUser(formData) {
-
-    const user = {
+    return {
         userName: formData.get('username'),
         email: formData.get('email'),
     };
-
-    return user;
 }
 
 // import { createUsername } from './utils.js'; ====> needs to be imported into preferences page when ready???
+// I'd say this is more of a 'getUserData' function than a 'create'
 export const createUsername = () => {
     const userNameCommon = JSON.parse(localStorage.getItem('userData'));
     return userNameCommon;

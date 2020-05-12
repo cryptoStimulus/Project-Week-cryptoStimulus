@@ -1,6 +1,7 @@
 const findByCategory = (preferencesArray, initialDataArray) => {
     const updatedOptionsArray = [];
 
+    // cool nested loop!
     for (let i = 0; i < preferencesArray.length; i++) {
         const preference = preferencesArray[i];
     

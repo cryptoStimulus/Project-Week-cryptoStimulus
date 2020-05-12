@@ -7,15 +7,16 @@ const email = document.getElementById('email');
 
 loginButton.addEventListener('click', (event) => {
     event.preventDefault();
+    // nice validation!
     if (email.value === '' || username.value === '') {
         return;
-    }
-    else {
+    } else {
         let userDataLocalStorage = localStorage.getItem('userData'); 
         if (!userDataLocalStorage) { 
-            userDataLocalStorage = 'hello'; 
+            userDataLocalStorage = 'hello'; // hmm, does this need to be here? 
             localStorage.setItem('userData', userDataLocalStorage);
         } 
+
         const madeUser = new FormData(form); 
         userDataLocalStorage = makeUser(madeUser);
         const stringed = JSON.stringify(userDataLocalStorage);
