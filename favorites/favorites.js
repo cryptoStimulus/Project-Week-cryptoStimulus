@@ -2,6 +2,7 @@ const faves = JSON.parse(localStorage.getItem('favorites'));
 
 function companyBlock2() { // i usually like functions to be named as verbs
     for (let i = 0; i < faves.length; i++) {
+        // nice looping! could be refatored as a forEach
         const company = faves[i]; 
 
         const companyBlock = document.createElement('section');

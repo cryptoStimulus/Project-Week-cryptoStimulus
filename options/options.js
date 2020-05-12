@@ -56,6 +56,7 @@ export function renderCompanyBlock() {
 
 renderCompanyBlock();
 
+// cool use of querySelectorAll
 const favButtonArray = document.querySelectorAll('button[type=checkbox]');
 
 let favoritesArray = localStorage.getItem('favorites');
