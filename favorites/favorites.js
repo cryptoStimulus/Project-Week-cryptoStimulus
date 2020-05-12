@@ -1,6 +1,6 @@
 const faves = JSON.parse(localStorage.getItem('favorites'));
 
-function companyBlock2() {
+function companyBlock2() { // i usually like functions to be named as verbs
     for (let i = 0; i < faves.length; i++) {
         const company = faves[i]; 
 
